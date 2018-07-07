@@ -2,7 +2,7 @@ FROM golang AS build-env
 ADD https://get.aquasec.com/microscanner /
 RUN chmod +x /microscanner
 ARG token
-RUN /microscanner <token> --continue-on-failure 
+RUN /microscanner ${token} --continue-on-failure 
 RUN mkdir -p /app
 WORKDIR /app
 ADD . /app
@@ -17,7 +17,7 @@ RUN cd /app
 ADD https://get.aquasec.com/microscanner /
 RUN chmod +x /microscanner
 ARG token
-RUN /microscanner <token> --continue-on-failure && rm /microscanner 
+RUN /microscanner ${token} --continue-on-failure && rm /microscanner 
 CMD ./hello
 
 #FROM golang:alpine
