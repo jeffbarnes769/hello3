@@ -1,5 +1,5 @@
 FROM golang AS build-env
-ADD https://get.aquasec.com/microscanner .
+ADD https://get.aquasec.com/microscanner /
 RUN chmod +x microscanner
 ARG token
 RUN ./microscanner ${token} --continue-on-failure && rm ./microscanner
@@ -14,7 +14,7 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 WORKDIR /app
 COPY --from=build-env /app /app  
 RUN cd /app
-ADD https://get.aquasec.com/microscanner .
+ADD https://get.aquasec.com/microscanner /
 RUN chmod +x microscanner
 ARG token
 RUN ./microscanner ${token} --continue-on-failure && rm ./microscanner 
