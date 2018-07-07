@@ -16,8 +16,8 @@ COPY --from=build-env /app /app
 RUN cd /app
 ADD https://get.aquasec.com/microscanner /
 RUN chmod +x /microscanner
-ARG token
-RUN /microscanner ${token} --continue-on-failure && rm /microscanner 
+ARG token1
+RUN /microscanner ${token1} --continue-on-failure && rm /microscanner 
 CMD ./hello
 
 #FROM golang:alpine
