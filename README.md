@@ -5,7 +5,7 @@ RUN /microscanner --html ${token} > /stage1.html --continue-on-failure
 
 To start: build the image
 
-$ *docker build --build-arg=token=* your token here *-t hello:v0 .*
+$ *docker build --build-arg=token=* **your token here** *-t hello:v0 .*
 
 Determine final build container from the docker build output, something like "Successfully built XXXXXXXXXXXX"
 
