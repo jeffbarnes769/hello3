@@ -11,8 +11,8 @@ Determine final build container from the docker build output, something like "Su
 
 $*./copy.sh XXXXXXXXXXXX* to copy the microscanner html output from the docker container to the local filesystem
 
-As we can see, *From golang* exposes a number of vulnerabilities in our image <http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1.html> 
+As we can see, **From golang** exposes a number of vulnerabilities in our image <http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1.html> 
 
-Specifying Alpine *From golang:alpine* as the base os, and (better still) applying updates, reduces vulnerabilities in a container image
+Specifying Alpine **From golang:alpine** as the base os, and (better still) applying updates, reduces vulnerabilities in a container image
 http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1%20-%201.html
 
