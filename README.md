@@ -16,4 +16,4 @@ As we can see, **From golang** exposes a number of vulnerabilities in our image 
 Specifying Alpine **From golang:alpine** as the base os, and (better still) applying updates, reduces vulnerabilities in a container image
 http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1%20-%201.html
 
-Thanks to Liz Rice for the demo at https://asciinema.org/a/186087
+Thanks to Liz Rice <https://www.lizrice.com/> for the demo at https://asciinema.org/a/186087
