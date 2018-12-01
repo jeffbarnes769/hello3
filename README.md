@@ -12,9 +12,9 @@ Copy the microscanner html output from the docker container to the local filesys
 ```
 $./copy.sh XXXXXXXXXXXX 
 ```
-As we can see, **From golang** exposes a number of vulnerabilities in our image <http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1.html> 
+As we can see, **From golang** exposes a number of vulnerabilities in our image https://jeffbarnes769.github.io/files/stage1.html
 
 Specifying Alpine **From golang:alpine** as the base os, and (better still) applying updates, reduces vulnerabilities in a container image
-http://htmlpreview.github.io/?https://github.com/jeffbarnes769/hello3/blob/master/stage1%20-%201.html
+https://jeffbarnes769.github.io/files/stage1%20-%201.html
 
 Thanks to Liz Rice <https://www.lizrice.com/> for the demo at https://asciinema.org/a/186087
