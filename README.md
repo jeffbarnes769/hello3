@@ -1,8 +1,10 @@
 # AquaSec Microscanner
 Running Opensource AquaSec microscanner https://github.com/aquasecurity/microscanner to scan an image for vulnerabilites, and post the output to an html file
 
+Add to your Dockerfile
+```
 RUN /microscanner --html ${token} > /stage1.html --continue-on-failure
-
+```
 To start: build the image
 ```
 $ docker build --build-arg=token=**your token here** -t hello:v0 .
